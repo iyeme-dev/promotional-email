@@ -84,6 +84,67 @@
             color: inherit !important;
             text-decoration: inherit !important;
         }
+
+        @media screen and (max-width: 599.98px) {
+         .column-wrapper .padding {
+            padding-right: 0 !important;
+            padding-left: 0 !important;
+         }
+
+         .column-wrapper {
+            padding: 0 115px !important;
+         }
+
+         .column-wrapper .column,
+         .column-wrapper .column img {
+            width: 100% !important;
+            max-width: 100% !important;
+         }
+      }
+
+      @media screen and (max-width: 499.98px) {
+         .column-wrapper {
+            padding: 0 60px !important;
+         }
+      }
+
+      @media screen and (max-width: 399.98px) {
+         .column-wrapper {
+            padding: 0 25px !important;
+         }
+      }
+
+      :root {
+         color-scheme: light dark;
+         supported-color-schemes: light dark;
+      }
+
+      @media (prefers-color-scheme: dark) {
+
+         body,
+         table,
+         .darkmode-bg {
+            background: #FCF9F5 !important;
+            color: #44413D !important;
+         }
+
+         [data-ogsc] body,
+         table,
+         .darkmode-bg {
+            background: #FCF9F5 !important;
+            color: #44413D !important;
+         }
+
+         .darkmode-transparent {
+            background-color: transparent !important;
+         }
+
+         [data-ogsc] .darkmode-transparent {
+            background-color: transparent !important;
+         }
+      }
+
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
     </style>
     <!--[if mso]>
 		<style type="text/css">
